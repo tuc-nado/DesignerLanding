@@ -1,0 +1,351 @@
+/* Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/*-------------------- */
+
+.container{
+    max-width: 1110px;
+    margin: auto;
+}
+
+.main-title{
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+    color: #37447E;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #091133;
+}
+
+.mini-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #091133;
+}
+
+.dark-title{
+    color: #091133;
+}
+
+.light-title{
+    color: rgba(34, 47, 101, 1);
+}
+
+.mini-text{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5D6970;
+}
+
+.text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6F7CB2;
+}
+
+.large-text{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+}
+
+.big-slogan{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #37447E;
+}
+
+.little-slogan{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5D6970;
+}
+
+.blue-btn{
+    background: #111B47;
+    border-radius: 2px;
+    color: white;
+    transition: all .3s ease-out;
+}
+
+.blue-btn:hover{
+    border: 2px solid #091133;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #091133;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.transparent-btn{
+    border: 2px solid #091133;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #091133;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .3s ease-out;
+}
+
+.transparent-btn:hover{
+    background: #111B47;
+    border-radius: 2px;
+    color: white;
+}
+
+.space-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+nav > a{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+li>a:hover{
+    text-decoration: underline;
+}
+
+.dark{
+    color: #091133;
+}
+
+.light{
+    color: #929ECC;
+}
+
+/* -------------------------------------- HEADER --------------- */
+
+.header{
+    background-image: url(assets/img/fon/header.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 70%;
+}
+
+.header-nav{
+    padding: 18px;
+}
+
+.header__btn .blue-btn{
+    width: 160px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.intro-block{
+    width: 540px;
+    padding: 243px 0 386px;
+}
+
+.intro__text{
+    margin: 20px 0 70px;
+}
+
+.intro-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro-btn button{
+    width: 189px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/* --------------------------------------- INFO ----------------------------------- */
+
+.info-block{
+    height: 742px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info__content{
+    max-width: 540px;
+}
+
+.info__cards{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card__item{
+    width: 255px;
+    height: 138px;
+}
+
+.card__title{
+    margin: 14px 0 6px;
+}
+
+
+/* --------------------------------------- DESCRIPTION ---------------------------- */
+
+.description-block{
+    height: 569px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descripton__content{
+    max-width: 445px;
+}
+
+.descripton__btn .blue-btn{
+    width: 150px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.descripton__title,
+.info__title{
+    margin-bottom: 16px;
+}
+
+.intro__text p,
+.info__text p,
+.descripton__text p{
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------------------------------ PRICE ---------------------------------- */
+
+.price-block{
+    height: 805px;
+    text-align: center;
+    background-image: url(assets/img/fon/fotter.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.price-block .container{
+    padding-top: 238px;
+}
+
+.price__text{
+    margin: 16px auto 36px;
+    width: 600px;
+}
+
+.price-little-slogan{
+    margin: 60px 0 13px;
+}
+
+.price-btn .blue-btn{
+    width: 189px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* ------------------------------------------- FOOTER --------------------------------------- */
+
+.footer{
+    background-color: #E7ECFF;
+}
+
+.footer-info{
+    height: 140px;
+    border-bottom: 2px solid #CDD1D4;
+    padding: 60px 0 40px;
+}
+
+.copywrite{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #939EA4;
+}
+
+.footer-btn .blue-btn{
+    width: 110px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-nav{
+    padding: 20px 0 32px;
+}
+
+.social-nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
